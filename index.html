@@ -3,6 +3,9 @@
   Hosted copy of PRIVACY.md — this is the file the App Store Connect
   "Privacy Policy URL" points at. Keep it in step with PRIVACY.md whenever the
   policy changes; the two must not diverge.
+
+  Published by copying this file over index.html in the selah-app.github.io
+  repo, which GitHub Pages serves at https://selah-app.github.io/.
 -->
 <html lang="en">
 <head>
@@ -12,19 +15,19 @@
 <style>
   :root { color-scheme: light dark; }
   body {
-    max-width: 42rem;
+    max-width: 40rem;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem 5rem;
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 3rem 1.25rem 6rem;
+    font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #1c1c1e;
     background: #fff;
   }
-  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
-  .updated { color: #6b6b70; margin-top: 0; }
+  h1 { font-size: 2rem; font-weight: 600; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin-top: 2.5rem; }
+  .updated { color: #6b6b70; margin: 0 0 2rem; font-size: .95rem; }
   a { color: #0a62d0; }
   ul { padding-left: 1.25rem; }
-  li { margin-bottom: .5rem; }
+  li { margin-bottom: .6rem; }
   @media (prefers-color-scheme: dark) {
     body { color: #e9e9ec; background: #131316; }
     .updated { color: #9a9aa0; }
@@ -37,136 +40,139 @@
 <h1>Privacy Policy for Selah</h1>
 <p class="updated"><strong>Last updated:</strong> August 8, 2026</p>
 
-<p>Selah (“the app”, “we”) is a devotional practice app: a session timer, Bible
-reading schedules, and optional connections with people you practice alongside.
-This policy explains what data the app collects, how it’s used, and what control
-you have over it.</p>
+<p>Selah is a devotional practice app — a session timer, Bible reading schedules,
+and, if you want them, connections with a few people you practice alongside. This
+policy sets out what the app collects, why, and what you can do about it. We have
+tried to keep it in plain language.</p>
 
-<h2>Data we collect</h2>
+<h2>What we collect</h2>
 
-<p><strong>Account information.</strong> If you create an account (via Apple
-Sign-In, Google Sign-In, or email), we store your email address, a username, and
-an optional display name, so you can be identified to contacts you connect
-with.</p>
+<p><strong>Your account.</strong> When you sign up — through Apple, Google, or an
+email address — we store that email address, the username you choose, and a
+display name if you set one. This is what lets the people you connect with
+recognize you.</p>
 
-<p><strong>Basic profile information.</strong> During setup the app asks for your
-gender and, in some cases, your birth year. This is stored privately and is never
-visible to other users; it is used only to determine who may connect with you.</p>
+<p><strong>A little about you.</strong> During setup we ask for your gender, and
+in some cases your birth year. These sit in a private table that no other user can
+read; we use them only to decide who is allowed to connect with you.</p>
 
-<p><strong>Phone number and contacts.</strong> If you choose to find contacts
-from your phone’s contact list, the app reads your contact list on the device to
-extract phone numbers. Only normalized phone numbers — not names or any other
-contact details — are sent to our server to check for matches against other Selah
-users who have registered the same number. Your contact list is never uploaded or
-stored on our servers. Providing a phone number is optional.</p>
+<p><strong>Your phone number, and finding contacts.</strong> If you ask the app to
+find people you already know, it reads your contact list on the device and pulls
+out the phone numbers. Only those numbers travel to our server, and only to be
+checked against other Selah users who have registered the same number — no names,
+no other details, and the numbers are not written down anywhere. Your contact list
+never leaves your phone, and giving us a phone number of your own is entirely
+optional.</p>
 
-<p><strong>Practice history.</strong> Your completed sessions (date, length, and
-duration) and your Bible reading progress are stored on our servers so that your
-history follows your account to a new or reinstalled device. Streaks, daily
-completion counts, and weekly averages are derived from this and shared with
-contacts only according to your own visibility settings, which you control per
-contact.</p>
+<p><strong>Your practice.</strong> We keep a record of the sessions you complete —
+the date, the length, and how long you actually sat — along with your progress
+through any Bible reading you have set yourself. Keeping this on our servers
+rather than only on the handset is what allows your history to survive a new
+phone. Streaks, daily counts, and weekly averages are worked out from these
+records, and the people you have connected with see only what your own visibility
+settings let them see. You set those per person.</p>
 
-<p><strong>Reading schedules.</strong> Bible reading schedules you create, and any
-schedules you share view-only with another user, are stored on our servers so the
-people you share with can see them.</p>
+<p><strong>Reading schedules.</strong> Schedules you build are stored so they
+follow your account, and if you share one with someone, so that they can read
+it.</p>
 
-<p><strong>Notifications.</strong> If you enable notifications, we store a device
-push token issued by Apple or Google so we can deliver reminders and alerts about
-contact requests and companions’ activity. You can turn notifications off in the
-app or in your device settings at any time.</p>
+<p><strong>Notifications.</strong> Turn notifications on and we store the push
+token that Apple or Google issues for your device, which is what lets us send you
+reminders and let you know when a contact request or a companion’s activity needs
+your attention. Turning notifications off, in the app or in your device settings,
+stops this.</p>
 
-<p><strong>Approximate location.</strong> The first time you open the app while
-signed in, our server derives an approximate city, region, and country from your
-connection’s IP address, and stores only that city/region/country against your
-account for aggregate statistics about where the app is used. The IP address
-itself is used only for that lookup and is never stored or logged. This is
-recorded once per account, not continuously, and the app does not request or use
-your device’s GPS location.</p>
+<p><strong>Roughly where you are.</strong> The first time you open the app while
+signed in, our server works out an approximate city, region, and country from your
+connection’s IP address, and keeps only that — a city, not a location. The IP
+address itself is used for the lookup and then discarded; it is never stored or
+written to a log. This happens once per account rather than continuously, and the
+app never asks for or uses your device’s GPS.</p>
 
-<p><strong>Feedback you send.</strong> If you send feedback from Settings, the
-message, the category you chose, any screenshots you attach, and your account
-identity are emailed to the developer so the report can be answered.</p>
+<p><strong>Anything you send us.</strong> Feedback you write from Settings reaches
+the developer’s inbox as an email, along with the category you picked, any
+screenshots you attached, and your account details, so that we can actually reply
+to you.</p>
 
-<p><strong>Camera.</strong> The app uses the camera only to scan a contact’s QR
-code when you choose to add a contact that way. No images from the camera are
-stored or transmitted.</p>
+<p><strong>The camera.</strong> The camera is used for one thing only: scanning a
+contact’s QR code, if that is how you choose to add them. Nothing it sees is saved
+or sent anywhere.</p>
 
-<p><strong>On-device data.</strong> Your session content, preferences, and a local
-copy of your history are stored on your device. Bible text you have read is
-cached on your device for offline use.</p>
+<p><strong>What stays on your phone.</strong> Your session content, your
+preferences, a local copy of your history, and any Bible text you have read all
+live on the device, the last of these so that reading still works offline.</p>
 
-<h2>Data we don’t collect</h2>
+<h2>What we don’t do</h2>
 
-<p>We do not use third-party analytics, advertising, or tracking SDKs. We do not
-track you across other apps or websites, and we do not sell or share your data
-with advertisers or data brokers.</p>
+<p>There are no analytics SDKs in Selah, no advertising, and no third-party
+trackers. We don’t follow you around other apps or websites, and we have never
+sold or shared your data with advertisers or data brokers — nor will we.</p>
 
-<h2>How your data is used</h2>
+<h2>Why we hold any of it</h2>
 
-<p>Your data is used solely to operate the app’s features: authenticating you,
-keeping your practice history available across your devices, matching you with
-contacts you choose to connect with, showing practice progress to contacts per
-your settings, delivering notifications you have enabled, answering feedback you
-send, and counting users by city in aggregate. We do not use your data for any
-other purpose.</p>
+<p>Every piece of data above earns its place by making a feature work: signing you
+in, keeping your history with you when you change phones, matching you with people
+you have chosen to connect with, showing those people what you have allowed them
+to see, sending the notifications you asked for, and answering your feedback. The
+one exception is the city we derive from your IP address, which exists so we can
+see, in aggregate, where in the world the app is being used. Nothing is used for
+any other purpose.</p>
 
-<h2>Third-party services</h2>
-
-<ul>
-  <li><strong>Supabase</strong> hosts our backend (authentication, database, and
-      server functions). Data is encrypted in transit (TLS) and at rest.</li>
-  <li><strong>Apple</strong> and <strong>Google</strong> provide optional sign-in.
-      If you use these, they handle your credentials directly — we only receive
-      the name and email you authorize.</li>
-  <li><strong>Apple Push Notification service</strong>, <strong>Firebase Cloud
-      Messaging</strong>, and <strong>Expo</strong> deliver push notifications to
-      your device.</li>
-  <li><strong>Resend</strong> delivers transactional email, including feedback you
-      send and contact-request notifications if you have chosen email
-      delivery.</li>
-  <li><strong>ipwho.is</strong> resolves an IP address to a city for the
-      approximate-location lookup described above. The IP is sent for that request
-      only and is not retained by us.</li>
-</ul>
-
-<h2>Your controls</h2>
+<h2>Who else is involved</h2>
 
 <ul>
-  <li>You can change what practice data is visible to contacts at any time in
-      Settings, per contact.</li>
-  <li>You can remove a contact connection, or stop sharing a reading schedule, at
-      any time.</li>
-  <li>You can turn notifications off in the app or in your device settings.</li>
-  <li>You can decline or revoke the contacts and camera permissions in your device
-      settings; the app remains usable without them.</li>
-  <li>You can permanently delete your account and all associated data from within
-      the app (Settings → Account → Delete). This immediately and irreversibly
-      deletes your profile, practice history, reading schedules, contact
-      connections, and shared progress data from our servers.</li>
+  <li><strong>Supabase</strong> runs our backend — sign-in, the database, and the
+      server functions behind it. Data is encrypted both in transit and at
+      rest.</li>
+  <li><strong>Apple</strong> and <strong>Google</strong> handle sign-in if you
+      choose it. Your credentials go to them, never to us; we receive only the name
+      and email you agree to share.</li>
+  <li><strong>Apple’s Push Notification service</strong>, <strong>Firebase Cloud
+      Messaging</strong>, and <strong>Expo</strong> carry notifications to your
+      device.</li>
+  <li><strong>Resend</strong> sends the email we send — your feedback, and
+      contact-request notifications if you have asked for those by email.</li>
+  <li><strong>ipwho.is</strong> turns an IP address into a city for the lookup
+      described above. The address goes to them for that one request and is kept by
+      neither of us.</li>
 </ul>
 
-<h2>Data retention</h2>
+<h2>What you control</h2>
 
-<p>Account data is retained until you delete your account, at which point it is
-deleted. Data stored on your device remains there until you delete the app or
-clear its data. Feedback emails you have sent are retained in the developer’s
-inbox so they can be answered.</p>
+<ul>
+  <li>Change what your contacts can see, person by person, in Settings.</li>
+  <li>Remove a contact connection, or stop sharing a reading schedule, whenever
+      you like.</li>
+  <li>Turn notifications off, in the app or in your device settings.</li>
+  <li>Refuse or withdraw the contacts and camera permissions — the app still works
+      without them.</li>
+  <li>Delete your account outright from Settings → Account → Delete. This is
+      immediate and cannot be undone: your profile, your practice history, your
+      reading schedules, your connections, and everything shared from them are
+      removed from our servers.</li>
+</ul>
 
-<h2>Children’s privacy</h2>
+<h2>How long we keep it</h2>
 
-<p>Selah is not directed at children under 13, and we do not knowingly collect
-data from children under 13. If you believe a child under 13 has provided us
-data, contact us at the address below and we will delete it.</p>
+<p>Your account data stays until you delete your account, and then it goes. What
+is stored on your phone stays there until you delete the app or clear its data.
+Any feedback you have emailed us remains in the developer’s inbox, as email does,
+so that the conversation can be picked up again.</p>
+
+<h2>Children</h2>
+
+<p>Selah is not aimed at children under 13, and we do not knowingly collect
+anything from them. If you think a child under 13 has given us information, write
+to the address below and we will remove it.</p>
 
 <h2>Changes to this policy</h2>
 
-<p>We may update this policy from time to time. Material changes will be
-reflected by updating the “Last updated” date above.</p>
+<p>We will update this policy as the app changes. When something material changes,
+the date at the top changes with it.</p>
 
-<h2>Contact</h2>
+<h2>Getting in touch</h2>
 
-<p>Questions about this policy or your data can be sent to:
+<p>Questions about any of this, or about your own data, can go to:
 <a href="mailto:n.grantmcgregor@gmail.com">n.grantmcgregor@gmail.com</a></p>
 
 </body>
