@@ -1,0 +1,109 @@
+<!doctype html>
+<!--
+  Support page for the App Store Connect "Support URL" field. Published by
+  copying this file to support/index.html in the selah-app.github.io repo, which
+  GitHub Pages serves at https://selah-app.github.io/support/.
+
+  Styling deliberately mirrors docs/privacy.html so the two pages read as one
+  site. If the app is renamed, both pages need updating together.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selah — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 6rem;
+    font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1c1c1e;
+    background: #fff;
+  }
+  h1 { font-size: 2rem; font-weight: 600; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 1.75rem 0 .3rem; }
+  .lede { color: #6b6b70; margin: 0 0 2rem; font-size: 1.05rem; }
+  a { color: #0a62d0; }
+  .contact {
+    margin: 2rem 0 0;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: .6rem;
+  }
+  .contact p { margin: 0; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(0,0,0,.12);
+    font-size: .95rem;
+    color: #6b6b70;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9e9ec; background: #131316; }
+    .lede, footer { color: #9a9aa0; }
+    a { color: #6aa8ff; }
+    .contact, footer { border-color: rgba(255,255,255,.16); }
+  }
+</style>
+</head>
+<body>
+
+<h1>Selah — Support</h1>
+<p class="lede">Something not working, or a question the app doesn’t answer? Start
+here, and if this page doesn’t cover it, write to us — a person reads every
+message.</p>
+
+<div class="contact">
+  <p><strong>Get in touch:</strong> open <strong>Settings → Feedback</strong> in
+  the app, which lets you attach screenshots, or email
+  <a href="mailto:n.grantmcgregor@gmail.com">n.grantmcgregor@gmail.com</a>.
+  We aim to reply within a few days.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<h3>I changed phones and my history is missing</h3>
+<p>Sign in with the same account you used before — Apple, Google, or the same
+email address — and your sessions and reading progress come back down from the
+server. If you signed up with Apple and then signed in with Google, those are two
+separate accounts, which is the usual cause.</p>
+
+<h3>A contact isn’t showing up</h3>
+<p>Matching by phone only works when both people have added a phone number to
+their own profile, and when the numbers are stored in the same form. If it still
+doesn’t find them, the surest route is a QR code: have them open their profile,
+and scan it from the contacts screen.</p>
+
+<h3>I’m not getting notifications</h3>
+<p>Check two places. In your device’s Settings, confirm notifications are allowed
+for Selah. In the app, check that the specific notifications you want are switched
+on — reminders and companion alerts are controlled separately.</p>
+
+<h3>I don’t want someone seeing my progress</h3>
+<p>Visibility is set per person, not globally. Open that contact and choose what
+they can see; you can also remove the connection entirely, which stops all sharing
+immediately.</p>
+
+<h3>The widget or Lock Screen isn’t updating</h3>
+<p>Open the app once — the widget refreshes from the app rather than on its own,
+and iOS also limits how often it may redraw. If it’s still stale after that,
+remove the widget and add it again.</p>
+
+<h3>I want to delete my account</h3>
+<p>Settings → Account → Delete. This removes your profile, practice history,
+reading schedules, and connections from our servers straight away. It cannot be
+undone, so export or note anything you want to keep first.</p>
+
+<h3>Reporting a bug</h3>
+<p>Settings → Feedback, and please attach a screenshot if you can. Knowing what
+you tapped just before it went wrong is usually what makes a bug findable.</p>
+
+<footer>
+  <p><a href="/">Privacy Policy</a> · Selah is made by Nathan McGregor.</p>
+</footer>
+
+</body>
+</html>
