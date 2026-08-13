@@ -1,0 +1,127 @@
+<!doctype html>
+<!--
+  Account deletion page for the Google Play Console "Delete account URL" field
+  (App content → Data safety → account deletion). Published by copying this file
+  to delete-account/index.html in the selah-app.github.io repo, which GitHub
+  Pages serves at https://selah-app.github.io/delete-account/.
+
+  Play requires this page to be reachable without installing the app or signing
+  in, and to state both what deletion removes and what survives it. Keep those
+  two lists in step with PRIVACY.md ("What you control" / "How long we keep it")
+  and with what supabase/functions/delete-account actually does — Google checks
+  the page against the Data safety form, and the three must not drift.
+
+  Styling deliberately mirrors docs/privacy.html and docs/support.html so all
+  three read as one site.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selah — Delete your account</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 6rem;
+    font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1c1c1e;
+    background: #fff;
+  }
+  h1 { font-size: 2rem; font-weight: 600; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin-top: 2.5rem; }
+  .lede { color: #6b6b70; margin: 0 0 2rem; font-size: 1.05rem; }
+  a { color: #0a62d0; }
+  ol, ul { padding-left: 1.3rem; }
+  li { margin: .35rem 0; }
+  .contact {
+    margin: 2rem 0 0;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: .6rem;
+  }
+  .contact p { margin: 0; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(0,0,0,.12);
+    font-size: .95rem;
+    color: #6b6b70;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9e9ec; background: #131316; }
+    .lede, footer { color: #9a9aa0; }
+    a { color: #6aa8ff; }
+    .contact, footer { border-color: rgba(255,255,255,.16); }
+  }
+</style>
+</head>
+<body>
+
+<h1>Delete your Selah account</h1>
+<p class="lede">Selah, by Nathan McGregor. Your account is yours to close, and
+closing it takes your data with it. There are two ways to do it — one inside the
+app, and one for anyone who no longer has the app installed.</p>
+
+<h2>From inside the app</h2>
+<p>This is immediate and needs nobody’s help:</p>
+<ol>
+  <li>Open Selah and sign in.</li>
+  <li>Go to <strong>Settings → Account</strong>.</li>
+  <li>Tap <strong>Delete account</strong> and confirm.</li>
+</ol>
+<p>Your account and everything listed below are removed from our servers there
+and then. It cannot be undone, so note anything you want to keep first.</p>
+
+<h2>If you no longer have the app</h2>
+<div class="contact">
+  <p>Email <a href="mailto:n.grantmcgregor@gmail.com?subject=Delete%20my%20Selah%20account">n.grantmcgregor@gmail.com</a>
+  from the address you signed up with, with the subject <strong>“Delete my Selah
+  account”</strong>. If you signed in with Apple or Google, say which. We will
+  confirm the request, delete the account within 30 days, and write back to tell
+  you it is done.</p>
+</div>
+<p>We ask you to write from the signed-up address because it is the only thing
+that shows the account is yours. Where that isn’t possible — a Hide My Email
+address that has since lapsed, say — tell us your username and we will find
+another way to check.</p>
+
+<h2>What deletion removes</h2>
+<p>Everything held against your account, permanently:</p>
+<ul>
+  <li>your profile — username, name, email, and any phone number, gender or birth
+  year you gave;</li>
+  <li>your practice history: every session you have completed, and the goals and
+  streaks derived from it;</li>
+  <li>your Bible reading log and every reading schedule you have made;</li>
+  <li>your contacts and companion connections, and anything shared through them —
+  which also removes you from the people you were connected to;</li>
+  <li>any reading schedules you had shared with others, and any shared with you;</li>
+  <li>the notification tokens that let us reach your devices.</li>
+</ul>
+
+<h2>What isn’t covered by it</h2>
+<ul>
+  <li><strong>Data on your phone.</strong> Selah keeps a copy of your own
+  sessions and readings on the device so it works offline. That copy is removed
+  when you uninstall the app or clear its storage — deleting the account does not
+  reach onto your phone.</li>
+  <li><strong>Feedback you have emailed us.</strong> Anything you sent to the
+  address above stays in the developer’s inbox, as email does, so the
+  conversation can be picked up again. Ask and we will delete that too.</li>
+  <li><strong>Your Apple or Google account.</strong> If you signed in with one,
+  it belongs to them rather than to us; deleting your Selah account only ends
+  Selah’s use of it. You can also revoke Selah’s access in your Apple or Google
+  account settings.</li>
+</ul>
+<p>We keep no backup copy of a deleted account, and no retention period beyond
+the 30 days an emailed request may take to process.</p>
+
+<footer>
+  <p><a href="/">Privacy Policy</a> · <a href="/support/">Support</a> · Selah is
+  made by Nathan McGregor.</p>
+</footer>
+
+</body>
+</html>
